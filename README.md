@@ -1,3 +1,6 @@
+# Laravel CQRS
+
+A proper CQRS utility library for Laravel. Originally from serrexlabs/laravel-cqrs
 
 **Initiating Project**
 
@@ -6,11 +9,10 @@
 **Module creation**
 
  `` php artisan make:module ``
- 
- 
+
  **Command creation**
  
-  `` php artisan make:cqrs:command <command-name> ``
+ `` php artisan make:cqrs:command <command-name> ``
  
  * As a convention, append Command postfix end of every command (Ex: SampleCommand)
   
