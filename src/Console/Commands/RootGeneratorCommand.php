@@ -1,6 +1,6 @@
 <?php
 
-namespace  Serrexlabs\Cqrs\Console\Commands;
+namespace  Isu3ru\Cqrs\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 
@@ -60,7 +60,7 @@ abstract class RootGeneratorCommand extends GeneratorCommand
      */
     public function getSrcDir()
     {
-        return $this->laravel['path.base'].'/src/';
+        return $this->laravel['path.base'].'/app/CQRS/';
     }
 
     abstract protected function getEntityNamespace();

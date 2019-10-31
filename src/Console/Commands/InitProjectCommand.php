@@ -1,6 +1,6 @@
 <?php
 
-namespace  Serrexlabs\Cqrs\Console\Commands;
+namespace  Isu3ru\Cqrs\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
@@ -48,7 +48,7 @@ class InitProjectCommand extends GeneratorCommand
      */
     protected function getPath($name)
     {
-        return $this->laravel['path.base'].'/src/'.$name.'/.gitkeep';
+        return $this->laravel['path.base']. DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR .$name.'/.gitkeep';
     }
 
     /**
@@ -68,7 +68,7 @@ class InitProjectCommand extends GeneratorCommand
     {
         $composer = json_decode(file_get_contents(base_path('composer.json')), true);
         $psr4 = data_get($composer, 'autoload.psr-4');
-        $psr4[$rootName . "\\"] = "src". DIRECTORY_SEPARATOR . $rootName;
+        $psr4[$rootName . "\\"] = "app". DIRECTORY_SEPARATOR . "CQRS". DIRECTORY_SEPARATOR . $rootName;
         array_set($composer, 'autoload.psr-4', $psr4);
 
         $composer = json_encode($composer, JSON_PRETTY_PRINT);

@@ -1,6 +1,6 @@
 <?php
 
-namespace  Serrexlabs\Cqrs\Console\Commands;
+namespace  Isu3ru\Cqrs\Console\Commands;
 
 
 class QueryHandlerMakeCommand extends RootGeneratorCommand

@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Serrexlabs\Cqrs\Controllers;
+namespace Isu3ru\Cqrs\Controllers;
 
 use App\Http\Controllers\Controller as BaseController;
 
 /**
- * @author Sanath Samarasinghe <sanath@serrexlabs.com>
+ * @author Isuru Ranawaka <isu3ru@gmail.com>
  */
 class Controller extends BaseController
 {

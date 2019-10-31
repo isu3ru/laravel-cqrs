@@ -1,20 +1,20 @@
 <?php
 
-namespace Serrexlabs\Cqrs;
+namespace Isu3ru\Cqrs;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use Serrexlabs\Cqrs\Console\Commands\CommandHandlerMakeCommand;
-use Serrexlabs\Cqrs\Console\Commands\CommandMakeCommand;
-use Serrexlabs\Cqrs\Console\Commands\InitProjectCommand;
-use Serrexlabs\Cqrs\Console\Commands\ModelMakeCommand;
-use Serrexlabs\Cqrs\Console\Commands\ModuleMakeCommand;
-use Serrexlabs\Cqrs\Console\Commands\QueryHandlerMakeCommand;
-use Serrexlabs\Cqrs\Console\Commands\QueryMakeCommand;
-use Serrexlabs\Cqrs\Console\Commands\RepositoryInterfaceMakeCommand;
-use Serrexlabs\Cqrs\Console\Commands\RepositoryMakeCommand;
-use Serrexlabs\Cqrs\Console\Commands\TransformerMakeCommand;
-use Serrexlabs\Cqrs\Bus\CommandBus;
-use Serrexlabs\Cqrs\Bus\QueryExecutor;
+use Isu3ru\Cqrs\Console\Commands\CommandHandlerMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\CommandMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\InitProjectCommand;
+use Isu3ru\Cqrs\Console\Commands\ModelMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\ModuleMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\QueryHandlerMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\QueryMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\RepositoryInterfaceMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\RepositoryMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\TransformerMakeCommand;
+use Isu3ru\Cqrs\Bus\CommandBus;
+use Isu3ru\Cqrs\Bus\QueryExecutor;
 
 class ServiceProvider extends BaseServiceProvider
 {

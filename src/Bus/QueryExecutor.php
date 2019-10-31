@@ -1,11 +1,11 @@
 <?php
 
-namespace Serrexlabs\Cqrs\Bus;
+namespace Isu3ru\Cqrs\Bus;
 
 use Illuminate\Container\Container;
 
 /**
- * @author Sanath Samarasinghe <sanath@serrexlabs.com>
+ * @author Isuru Ranawaka <isu3ru@gmail.com>
  */
 class QueryExecutor
 {
