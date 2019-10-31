@@ -48,7 +48,7 @@ class InitProjectCommand extends GeneratorCommand
      */
     protected function getPath($name)
     {
-        return $this->laravel['path.base']. DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR .$name.'/.gitkeep';
+        return $this->laravel['path.base'] . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'Cqrs' . DIRECTORY_SEPARATOR . $name . DIRECTORY_SEPARATOR . '.gitkeep';
     }
 
     /**
