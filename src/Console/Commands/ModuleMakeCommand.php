@@ -40,7 +40,7 @@ class ModuleMakeCommand extends GeneratorCommand
     {
         $modules = [];
 
-        foreach ($this->files->directories($this->laravel['path.base'].'/app/CQRS/') as $rootDir) {
+        foreach ($this->files->directories($this->laravel['path.base'].'/app/Cqrs/') as $rootDir) {
             $modules[] = basename($rootDir)."\\".$this->argument('name');
         }
         if(count($modules) > 1) {
@@ -66,7 +66,7 @@ class ModuleMakeCommand extends GeneratorCommand
 
     protected function getPath($fqns)
     {
-        return $this->laravel['path.base'].'/app/CQRS/'.str_replace('\\', '/', $fqns).'/';
+        return $this->laravel['path.base'].'/app/Cqrs/'.str_replace('\\', '/', $fqns).'/';
     }
 
     /**

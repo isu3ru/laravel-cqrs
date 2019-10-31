@@ -68,8 +68,8 @@ class InitProjectCommand extends GeneratorCommand
     {
         $composer = json_decode(file_get_contents(base_path('composer.json')), true);
         $psr4 = data_get($composer, 'autoload.psr-4');
-        $psr4[$rootName . "\\"] = "app". DIRECTORY_SEPARATOR . "CQRS". DIRECTORY_SEPARATOR . $rootName;
-        array_set($composer, 'autoload.psr-4', $psr4);
+        $psr4[$rootName . "\\"] = "app". DIRECTORY_SEPARATOR . "Cqrs". DIRECTORY_SEPARATOR . $rootName;
+        data_set($composer, 'autoload.psr-4', $psr4);
 
         $composer = json_encode($composer, JSON_PRETTY_PRINT);
         $composer = str_replace("\/", DIRECTORY_SEPARATOR, $composer);

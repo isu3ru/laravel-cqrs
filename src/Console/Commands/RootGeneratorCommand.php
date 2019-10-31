@@ -60,7 +60,7 @@ abstract class RootGeneratorCommand extends GeneratorCommand
      */
     public function getSrcDir()
     {
-        return $this->laravel['path.base'].'/app/CQRS/';
+        return $this->laravel['path.base'].'/app/Cqrs/';
     }
 
     abstract protected function getEntityNamespace();

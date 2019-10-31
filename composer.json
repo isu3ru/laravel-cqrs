@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Isu3ru\\Cqrs\\": "src/"
+            "Isu3ru\\Cqrs\\": "app/Cqrs/"
         }
     },
     "extra": {
