@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Isu3ru\Cqrs\Controllers;
 
 use App\Http\Controllers\Controller as BaseController;
