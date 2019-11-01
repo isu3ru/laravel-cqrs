@@ -25,9 +25,9 @@ class ModuleMakeCommand extends GeneratorCommand
      * @var array
     */
     protected $folderStructure = [
-        'Command/Handlers',
-        'Query/Handlers',
-        'Repository/Contracts',
+        'Commands/Handlers',
+        'Queries/Handlers',
+        'Repositories/Contracts',
         'Exceptions',
     ];
 

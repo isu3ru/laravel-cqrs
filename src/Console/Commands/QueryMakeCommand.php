@@ -51,6 +51,6 @@ class QueryMakeCommand extends RootGeneratorCommand
 
     protected function getEntityNamespace()
     {
-        return  '\Query';
+        return  '\Queries';
     }
 }

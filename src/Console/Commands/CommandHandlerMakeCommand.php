@@ -39,6 +39,6 @@ class CommandHandlerMakeCommand extends RootGeneratorCommand
 
     protected function getEntityNamespace()
     {
-        return  '\Command\Handlers';
+        return  '\Commands\Handlers';
     }
 }

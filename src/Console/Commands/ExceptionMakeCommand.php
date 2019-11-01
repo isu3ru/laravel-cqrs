@@ -38,6 +38,6 @@ class ExceptionMakeCommand extends RootGeneratorCommand
 
     protected function getEntityNamespace()
     {
-        return  '\Exception';
+        return  '\Exceptions';
     }
 }

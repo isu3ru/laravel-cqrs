@@ -39,6 +39,6 @@ class RepositoryInterfaceMakeCommand extends RootGeneratorCommand
 
     protected function getEntityNamespace()
     {
-        return  '\Repository\Contracts';
+        return  '\Repositories\Contracts';
     }
 }

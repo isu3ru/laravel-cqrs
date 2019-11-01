@@ -52,6 +52,6 @@ class RepositoryMakeCommand extends RootGeneratorCommand
 
     protected function getEntityNamespace()
     {
-        return  '\Repository';
+        return  '\Repositories';
     }
 }

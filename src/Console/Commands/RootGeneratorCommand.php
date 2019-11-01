@@ -26,6 +26,7 @@ abstract class RootGeneratorCommand extends GeneratorCommand
                         $rootDir."\\".$moduleDir;
                 }
             }
+
             $this->module = $this->choice('Under which module?', $modules, 0);
         } else {
             $this->module = $this->option('module');

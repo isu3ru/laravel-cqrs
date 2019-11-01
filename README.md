@@ -1,35 +1,40 @@
 # Laravel CQRS
 
-A proper CQRS utility library for Laravel. Originally from serrexlabs/laravel-cqrs
+A proper CQRS utility library for Laravel. Code adopted form serrexlabs/laravel-cqrs.
+
+## Updated to Laravel 6.4. 
 
 **Initiating Project**
 
 `` php artisan init:project <project-name>``
 
-**Module creation**
+**Module Creation**
 
  `` php artisan make:module ``
 
- **Command creation**
+ **Command Creation**
  
  `` php artisan make:cqrs:command <command-name> ``
  
  * As a convention, append Command postfix end of every command (Ex: SampleCommand)
   
-**Query creation**
+**Query Creation**
 
 `` php artisan make:cqrs:query <cquery-name> ``
 
 * As a convention, append Query postfix end of every query (Ex: SampleQuery)
 
-**Repository creation**
+**Repository Creation**
 
 `` php artisan make:repository <repository-name> ``
 
 * As a convention, append Repository postfix end of every repository (Ex: SampleRepository)
 
-** Everything will be generated inside app/Cqrs directory. **
+** Everything CQRS related components will be generated inside app/Cqrs directory. **
 
+**Transformer Creation**
+
+`` php artisan make:transformer <transformer-name> ``
 
 Change your controller to look like this.
 

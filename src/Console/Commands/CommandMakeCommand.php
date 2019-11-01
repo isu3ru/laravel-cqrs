@@ -58,7 +58,7 @@ class CommandMakeCommand extends RootGeneratorCommand
 
     protected function getEntityNamespace()
     {
-        return  '\Command';
+        return  '\Commands';
     }
 
 }

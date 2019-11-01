@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Isu3ru\Cqrs\Console\Commands\CommandHandlerMakeCommand;
 use Isu3ru\Cqrs\Console\Commands\CommandMakeCommand;
 use Isu3ru\Cqrs\Console\Commands\InitProjectCommand;
-use Isu3ru\Cqrs\Console\Commands\ModelMakeCommand;
 use Isu3ru\Cqrs\Console\Commands\ModuleMakeCommand;
 use Isu3ru\Cqrs\Console\Commands\QueryHandlerMakeCommand;
 use Isu3ru\Cqrs\Console\Commands\QueryMakeCommand;
@@ -28,15 +27,14 @@ class ServiceProvider extends BaseServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                CommandHandlerMakeCommand::class,
-                CommandMakeCommand::class,
                 InitProjectCommand::class,
-                ModelMakeCommand::class,
                 ModuleMakeCommand::class,
-                QueryHandlerMakeCommand::class,
+                CommandMakeCommand::class,
+                CommandHandlerMakeCommand::class,
                 QueryMakeCommand::class,
-                RepositoryInterfaceMakeCommand::class,
+                QueryHandlerMakeCommand::class,
                 RepositoryMakeCommand::class,
+                RepositoryInterfaceMakeCommand::class,
                 TransformerMakeCommand::class,
                 ExceptionMakeCommand::class,
             ]);

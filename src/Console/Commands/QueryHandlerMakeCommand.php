@@ -38,6 +38,6 @@ class QueryHandlerMakeCommand extends RootGeneratorCommand
 
     protected function getEntityNamespace()
     {
-        return  '\Query\Handlers';
+        return  '\Queries\Handlers';
     }
 }
