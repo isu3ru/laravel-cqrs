@@ -13,6 +13,7 @@ use Isu3ru\Cqrs\Console\Commands\QueryMakeCommand;
 use Isu3ru\Cqrs\Console\Commands\RepositoryInterfaceMakeCommand;
 use Isu3ru\Cqrs\Console\Commands\RepositoryMakeCommand;
 use Isu3ru\Cqrs\Console\Commands\TransformerMakeCommand;
+use Isu3ru\Cqrs\Console\Commands\ExceptionMakeCommand;
 use Isu3ru\Cqrs\Bus\CommandBus;
 use Isu3ru\Cqrs\Bus\QueryExecutor;
 
@@ -37,6 +38,7 @@ class ServiceProvider extends BaseServiceProvider
                 RepositoryInterfaceMakeCommand::class,
                 RepositoryMakeCommand::class,
                 TransformerMakeCommand::class,
+                ExceptionMakeCommand::class,
             ]);
         }
     }
