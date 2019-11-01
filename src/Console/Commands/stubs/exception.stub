@@ -3,7 +3,7 @@ namespace DummyNamespace;
 
 use Exception;
 
-class DummyException implements Exception
+class DummyClass implements Exception
 {
 
 }
