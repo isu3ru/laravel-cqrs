@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "league/fractal": "^0.18.0",
+        "league/fractal": "^0.17.0",
         "illuminate/console": "^6.4",
         "illuminate/container": "^6.4",
         "illuminate/contracts": "^6.4",

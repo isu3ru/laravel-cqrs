@@ -1,6 +1,21 @@
 # Laravel CQRS
 
-A proper CQRS utility library for Laravel. Code adopted form serrexlabs/laravel-cqrs.
+CQRS utility library for Laravel. Code adopted form serrexlabs/laravel-cqrs.
+
+# installation
+
+add to composer.json file as a repository.
+
+``
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/isu3ru/laravel-cqrs"
+        }
+    ],
+``
+
+then require in composer as ``"isu3ru/laravel-cqrs": "dev-master"``. then run composer update to install the project.
 
 ## Updated to Laravel 6.4. 
 
@@ -10,7 +25,7 @@ A proper CQRS utility library for Laravel. Code adopted form serrexlabs/laravel-
 
 **Module Creation**
 
- `` php artisan make:module ``
+ `` php artisan make:module <module-name>``
 
  **Command Creation**
  
