@@ -44,7 +44,7 @@ class CommandBus
     public function dispatch($command)
     {
         $commandHandler = $this->getCommandHandler($command);
-        $this->container->call([$commandHandler, "__invoke"], [$command]);
+        $this->container->call([$commandHandler, "__invoke"], ['command' => $command]);
     }
 
     /**
