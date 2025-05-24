@@ -8,17 +8,26 @@
         }
     ],
     "require": {
-        "league/fractal": "^0.19",
-        "illuminate/console": "^7.17",
-        "illuminate/container": "^7.17",
-        "illuminate/contracts": "^7.17",
-        "illuminate/http": "^7.17",
-        "illuminate/support": "^7.17"
+        "php": "^8.2",
+        "league/fractal": "^0.20",
+        "illuminate/console": "^12.0",
+        "illuminate/container": "^12.0",
+        "illuminate/http": "^12.0",
+        "illuminate/support": "^12.0"
     },
     "autoload": {
         "psr-4": {
             "Isu3ru\\Cqrs\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Isu3ru\\Cqrs\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.0"
     },
     "extra": {
         "laravel": {
@@ -26,5 +35,10 @@
                 "Isu3ru\\Cqrs\\ServiceProvider"
             ]
         }
-    }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
