@@ -41,7 +41,7 @@ class QueryExecutor
     public function execute($query)
     {
         $queryHandler = $this->getCommandHandler($query);
-        return $this->container->call([$queryHandler, "__invoke"], [$query]);
+        return $this->container->call([$queryHandler, "__invoke"], ['query' => $query]);
     }
 
     /**

@@ -4,9 +4,10 @@ CQRS utility library for Laravel. Code adopted form the outdated repository serr
 
 ## Compatibility
 
-Updated to be compatible with the latest Laravel v7.12.0.
+This library is compatible with **Laravel 11.x** and requires **PHP 8.2** or higher.
+Core Laravel dependencies have been updated to match Laravel 11.x requirements.
 
-## installation
+## Installation
 
 add to composer.json file as a repository.
 
@@ -19,8 +20,11 @@ add to composer.json file as a repository.
     ],
 ``
 
-then require in composer as ``"isu3ru/laravel-cqrs": "dev-master"``. then run composer update to install the project.
+then require in composer as ``"isu3ru/laravel-cqrs": "dev-master"`` (or the appropriate version tag for Laravel 11 compatibility). Then run ``composer update`` to install the project.
 
+## Testing
+
+The package now includes automated tests managed by PHPUnit and Orchestra Testbench to ensure stability and easier development. You can run tests using the `composer test` script.
 
 ## How to add into your Laravel Project
 
